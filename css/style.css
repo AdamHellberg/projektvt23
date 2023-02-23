@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(17, 18, 18);
+}
+
+#wrapper{
+    display: grid;
+    padding: 0px;
+    height: 250vh;
+    width: 99vw;
+    grid-template-areas:
+    "header header header"
+    "sec1 sec1 sec1"
+    "sec2 sec2 sec2"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 400px auto;
+    margin: auto;
+
+}
+
+#sec1{
+    grid-area: sec1;
+    border: 1px solid white;
+}
+#sec2{
+    grid-area: sec2;
+    border: 1px solid white;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#meny{
+    height: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logga{
+    height: 80px;
+    width: 330px;
+    background-image:url(../img/bilder\ Index/logga_big.png);
+    background-size: cover;
+}
+ .meny-text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:aliceblue;
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    transition-duration: 0.5s;
+ }
+
+ .meny-text:hover{
+    transform: scale(1.05);
+    color: rgb(255, 72, 72);
+ }
+
+ #sok_ham{
+    height: 35px;
+    width: 60px;
+    transition-duration: 1s;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ #sok:hover{
+    transform: scale(1.1);
+ }
+
+ #sok{
+    background-image: url(../img/bilder\ Index/sok-logga.png);
+    background-size: contain;
+    height: 27px;
+    width: 27px;
+    transition-duration: 0.5s;
+    
+ }
+  #ham{
+    background-image: url(../img/bilder\ Index/ham.png);
+    background-size: contain;
+    height: 27px;
+    width: 27px;
+    transition-duration: 0.5s;
+  }
+
+  #ham:hover{
+    transform: scale(1.1);
+ }
+
+#header_line{
+    width: 100%;
+    position: absolute;
+    margin-top: 97px;
+    opacity: 40%;
+}
