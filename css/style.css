@@ -53,7 +53,7 @@ header{
     height: 50px;
     width: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -149,7 +149,7 @@ header{
     width: 100%;
     /*border: 1px solid white;*/
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
 }
@@ -319,6 +319,7 @@ header{
     font-size: 15px;
     letter-spacing: 2.5px;
     transition-duration: 0.5s;
+    text-decoration: none;
  }
 
  .invis:hover{
@@ -326,7 +327,23 @@ header{
     color: rgb(255, 72, 72);
  }
 
+ @media screen and (max-width: 800px){
+    #flex_1{
+        display: none;
+    }
+ }
 
+ @media screen and (max-width: 680px){
+    #flex_5{
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 600px){
+    #flex_3{
+        display: none;
+    }
+ }
 
 @media screen and (max-width: 500px){
     
@@ -334,14 +351,79 @@ header{
         overflow: hidden;
     }
 
+    #flex_5{
+        /* border: 1px solid white; */
+        height: 310px;
+        width : 170px;
+        background-image: url(../img/bilder\ Index/ukelele.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end;
+        display: inline;
+    }
+
+    #flex_1{
+    
+        height: 200px;
+        width : 200px;
+        background-image: url(../img/bilder\ Index/new_arrivals.png);
+        background-size: contain;
+        display: inline;
+    }
+
+    #flex_3{
+    
+        height: 200px;
+        width : 200px;
+        background-image: url(../img/bilder\ Index/guitars.png);
+        background-size: contain;
+        display: inline;
+    }
+
+    #row_5{
+        height: 250px;
+        width: 100%;
+        /* border: 1px solid white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        opacity: 0;
+        display: inline;
+    }
+    
+
+    #row_3{
+        height: 250px;
+        width: 100%;
+        /* border: 1px solid white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+
+    #flex_7, #flex_6{
+        display:none;
+    }
+
+    #logga{
+        height: 80px;
+        width: 330px;
+        background-image:url(../img/bilder\ Index/logga_big.png);
+        background-size: cover;
+        
+        }
+
     #meny.active{
         height: 50px;
         width: 100%;
         align-items: center;
         overflow: visible;
-        display: flex;
-        justify-content: space-around;
+        display: flex !important;
+        justify-content: space-around !important;
         transition-duration: 0.2s;
+        /* gap: 20px !important; */
     }
 
     #meny{
@@ -364,6 +446,8 @@ header{
         display: contents;
         margin:0px;
         transition-duration: 0.2s;
+        text-decoration: none;
+        display: block;
     }
 
     #sok {
@@ -399,4 +483,110 @@ header{
         transition-duration: 0.5s;
         background-repeat: no-repeat;
       }
+
+      #sec1{
+        grid-area: sec1;
+        background-image: url(../img/bilder\ Index/mobile_header_logga.png);
+        background-size: cover;
+        margin-bottom: 70px;
+    }
+
+    #sec1_button{
+        width: 160px;
+        height: 40px;
+        position: relative;
+        background-color: black;
+        border-radius: 10px;
+        margin-top: 68%;
+        margin-left: 16%;
+        transition-duration: 0.5s;
+        text-align: center;
+    }
+
+    #flex{
+        width: 100%;
+    }
+
+    #row_1{
+
+        width: 100vw;
+        height: calc(100vw - 0px); 
+        max-height: calc(100vh - 0px); 
+        max-width: calc(100vh - 0px); 
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    #flex_1{
+        height: calc(100vw / 2);
+        width: calc(100vw / 2);
+    }
+
+    #flex_2{
+        height: calc(100vw / 2);
+        width: calc(100vw / 2);
+    }
+
+    #flex_3{
+        height: calc(100vw / 2);
+        width: calc(100vw / 2);
+    }
+
+    #flex_4{
+        height: calc(100vw / 2);
+        width: calc(100vw / 2);
+    }
+
+    
+    
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 410px){
+    #sec1_button{
+        width: 160px;
+        height: 40px;
+        position: relative;
+        background-color: black;
+        border-radius: 10px;
+        margin-top: 66%;
+        margin-left: 15%;
+        transition-duration: 0.5s;
+    }
+      
+    }
+    
+
+
+    
+    
+
+
+@media screen and (min-height: 880px){
+    
+    #logga{
+        height: 80px;
+        width: 330px;
+        background-image: url(../img/bilder\ Index/logga_medium.png);
+        background-size: cover;
+        }
+            
+
+    
+        #header_line {
+            width: 100%;
+            position: absolute;
+            margin-top: 92px;
+            opacity: 20%;
+        }
+
 }

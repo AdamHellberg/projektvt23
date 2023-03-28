@@ -5,6 +5,7 @@ const meny = document.querySelector("#meny");
 const invis = document.querySelector(".invis");
 const sok = document.querySelector("#sok");
 
+
 ham.addEventListener('click', toggleMenu )
 
 function toggleMenu(event) {
