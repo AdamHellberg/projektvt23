@@ -1,11 +1,7 @@
-// Denna fil skall innehålla JavaScript (JS)
-
 const ham = document.querySelector("#ham");
 const meny = document.querySelector("#meny");
 const invis = document.querySelector(".invis");
 const sok = document.querySelector("#sok");
-const gmail = document.querySelector("#gmail");
-
 
 ham.addEventListener('click', toggleMenu )
 

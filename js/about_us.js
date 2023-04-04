@@ -1,7 +1,7 @@
 const more_bttn = document.querySelector("#more_bttn");
 const ruta_1 = document.querySelector("#ruta_1");
 const text_ruta_1 = document.querySelector("#text_ruta_1");
-const openclose = document.querySelector("#openclose")
+const openclose = document.querySelector("#openclose") 
 const more_bttn_2 = document.querySelector("#more_bttn_2");
 const openclose_2 = document.querySelector("#openclose_2")
 
